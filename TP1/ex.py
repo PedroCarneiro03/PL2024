@@ -44,6 +44,8 @@ print("Percentagem de atletas Aptos: " + str(percentagemApto) + "%  |  Percentag
 
 print("Distribuicao de atltas por escalao etario: ")
 for i in range(0,tamanho):
-    res=f"""[{i*5}-{i*5+4}]: {escalaoEtario[i]/totalAtletas}%"""
-    print(res)
+    valor=escalaoEtario[i]/totalAtletas
+    if valor !=0:
+        res=f"""[{i*5}-{i*5+4}]: {valor}%"""
+        print(res)
 
